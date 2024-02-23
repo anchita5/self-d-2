@@ -2,7 +2,7 @@
 /*
 *  FILE           :  f5.cpp
 *  PROJECT        :  FOCUSED 5
-*  PROGRAMMER     :  Anchita Kakria  
+*  PROGRAMMER     :  Anchita Kakria  (8961585)
 *  DATE           :  23 FEB,2024
 *  DESCRIPTION    :  This is a program to display characters and their averaged values.
 */
