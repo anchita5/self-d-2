@@ -1,3 +1,12 @@
+
+/*
+*  FILE           :  f5.cpp
+*  PROJECT        :  FOCUSED 5
+*  PROGRAMMER     :  Anchita Kakria   
+*  DATE           :  23 FEB,2024
+*  DESCRIPTION    :  This is a program to display characters and their averaged values.
+*/
+
 #include <stdio.h>
 int getNum(void);
 void modifyArrayValues(int arr[], int number_elements);
@@ -12,6 +21,16 @@ int main() {
 
     return 0;
 }
+
+// 
+// FUNCTION : getNum()
+// DESCRIPTION : 
+// It is used to get and return the value of entered user number.
+// PARAMETERS : 
+// void 
+// RETURNS : 
+// int : entered user number
+// 
 
 
 void modifyArrayValues(int arr[], int number_elements) {
