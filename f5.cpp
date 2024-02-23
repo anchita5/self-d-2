@@ -1,11 +1,21 @@
 #include <stdio.h>
-int getNum() {
-    int x;
-    printf("Enter integer: ");
-    scanf("%d", &x);
-    return x;
+int getNum(void);
+void modifyArrayValues(int arr[], int number_elements);
+int maxArrayValue(int arr[], int number_elements);
+
+int main() {
+    int Array[10];
+    modifyArrayValues(Array, 10);
+    int maximum_index = maxArrayValue(Array, 10);
+    printf("The highest value is: %d\n", Array[maximum_index]);
+    printf("Index of the highest value is: %d\n", maximum_index);
+
+    return 0;
 }
+
+
 void modifyArrayValues(int arr[], int number_elements) {
+    printf("Enter a number \n");
     for (int i = 0; i < number_elements; ++i) {
         arr[i] = getNum();
     }
@@ -20,12 +30,25 @@ int maxArrayValue(int arr[], int number_elements) {
     }
     return maximum_index;
 }
-int main() {
-    int Array[10];
-    modifyArrayValues(Array, 10);
-    int maximum_index = maxArrayValue(Array, 10);
-    printf("The highest value is: %d\n", Array[maximum_index]);
-    printf("Index of the highest value is: %d\n", maximum_index);
 
-    return 0;
+
+#pragma warning(disable: 4996) // required by Visual Studio
+int getNum(void)
+{
+    /* the array is 121 bytes in size; we'll see in a later lecture how we can
+    improve this code */
+    char record[121] = { 0 }; /* record stores the string */
+    int number = 0;
+    /* NOTE to student: brace this function consistent with your others */
+    /* use fgets() to get a string from the keyboard */
+    fgets(record, 121, stdin);
+    /* extract the number from the string; sscanf() returns a number
+    * corresponding with the number of items it found in the string */
+    if (sscanf(record, "%d", &number) != 1)
+    {
+        /* if the user did not enter a number recognizable by
+        * the system, set number to -1 */
+        number = -1;
+    }
+    return number;
 }
