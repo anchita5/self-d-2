@@ -1,0 +1,29 @@
+commit f60d9bae6756d20c12d663881476738b73dea263
+Author: Anchita Kakria <anchita585@gmail.com>
+Date:   Fri Feb 23 15:52:35 2024 -0500
+
+    added student id to file
+
+commit cf25a6a81b1e82df561fc4f963892ce94291c192
+Author: Anchita Kakria <anchita585@gmail.com>
+Date:   Fri Feb 23 15:45:53 2024 -0500
+
+    added commit for getNum function
+
+commit 285201e8b903b2d775d72ef240931c6fa302ea87
+Author: Anchita Kakria <anchita585@gmail.com>
+Date:   Fri Feb 23 15:11:26 2024 -0500
+
+    modified getNum function
+
+commit c2463e5844421e9de568aafbc830ae87f6f67c46
+Author: Anchita Kakria <anchita585@gmail.com>
+Date:   Fri Feb 23 14:45:42 2024 -0500
+
+    added cpp file
+
+commit 5f558989cf534becf862bd30f78b0d1be55c3657
+Author: Anchita Kakria <anchita585@gmail.com>
+Date:   Fri Feb 23 14:38:24 2024 -0500
+
+    first commit

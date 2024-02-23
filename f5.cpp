@@ -2,7 +2,7 @@
 /*
 *  FILE           :  f5.cpp
 *  PROJECT        :  FOCUSED 5
-*  PROGRAMMER     :  Anchita Kakria   
+*  PROGRAMMER     :  Anchita Kakria  
 *  DATE           :  23 FEB,2024
 *  DESCRIPTION    :  This is a program to display characters and their averaged values.
 */
@@ -23,13 +23,14 @@ int main() {
 }
 
 // 
-// FUNCTION : getNum()
+// FUNCTION : modifyArrayValues()
 // DESCRIPTION : 
-// It is used to get and return the value of entered user number.
+// It is used to fill the array with given user input
 // PARAMETERS : 
-// void 
+// int arr[]
+// int number_elements 
 // RETURNS : 
-// int : entered user number
+// void
 // 
 
 
@@ -39,6 +40,17 @@ void modifyArrayValues(int arr[], int number_elements) {
         arr[i] = getNum();
     }
 }
+
+// 
+// FUNCTION : maxarrayvalues
+// DESCRIPTION : 
+// It is used to get and return the index of the number
+// PARAMETERS : 
+// int arr[]
+// int number_elements
+// RETURNS : 
+// int : index of the highest number
+// 
 int maxArrayValue(int arr[], int number_elements) {
     int maximum_index = 0;
 
@@ -50,6 +62,15 @@ int maxArrayValue(int arr[], int number_elements) {
     return maximum_index;
 }
 
+// 
+// FUNCTION : getNum()
+// DESCRIPTION : 
+// It is used to get and return the value of entered user number.
+// PARAMETERS : 
+// void 
+// RETURNS : 
+// int : entered user number
+// 
 
 #pragma warning(disable: 4996) // required by Visual Studio
 int getNum(void)
